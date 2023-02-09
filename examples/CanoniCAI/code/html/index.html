@@ -353,16 +353,13 @@
         ctx: { "question": question },
         name: "talk"
       }
-
       try {
-        // NOTE: Change this URL to your Jaseci server URL.
-        // NOTE: Change the token to your authenticated token
-        let result = await fetch('http://localhost:8000/js/walker_run', {
+        let result = await fetch('http://127.0.0.1:8000/', {
           method: 'POST',
           mode: 'cors',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'token bf6c3138799af356cbec27da90de0f7476fd9e25059c83dc0dfdd339ff68dd5b'
+            'Authorization': 'token 3d6167f068af60e34aacd99eb315038d7426d3f054bb52e34d55fdf6c09daf6a'
           },
           body: JSON.stringify(data),
         })
